@@ -34,11 +34,11 @@ import me from 'assets/images/me.svg'
             href="">Contact />
           </a>
           <div class="text-gray-500 grid grid-cols-2 gap-2">
-            <a type="button" href="" class="flex items-center space-x-2">
+            <a type="button" href="" class="flex items-center space-x-2 hover:text-lime-400">
               <iconGitHub />
               <span>Github</span>
             </a>
-            <a type="button" href="" class="flex items-center space-x-2">
+            <a type="button" href="" class="flex items-center space-x-2 hover:text-lime-400">
               <IconLinkedIn />
               <span>LinkedIn</span>
             </a>

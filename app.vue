@@ -1,5 +1,11 @@
+<script setup>
+import Tilt from 'vanilla-tilt-vue'
+import me from 'assets/images/me.svg'
+
+</script>
+
 <template>
-  <nav class="bg-gray-800 font-mono">
+  <nav class="bg-indigo-800 font-mono">
     <div class="max-w-5xl mx-auto">
       <div class="flex items-center justify-between px-4 py-6">
         <div>
@@ -10,7 +16,7 @@
           <a href="">About</a>
           <a href="">Work</a>
           <a href="">Contacts</a>
-          <a class="bg-lime-400 text-gray-800 font-bold p-3" href="">Brief me /> </a>
+          <a class="bg-lime-400 text-indigo-800 font-bold p-3" href="">Brief me /> </a>
         </div>
       </div>
     </div>
@@ -27,18 +33,25 @@
             class="bg-lime-900 border border-lime-400 hover:bg-lime-800 text-gray-100 font-bold px-6 py-4"
             href="">Contact />
           </a>
-          <div class="text-gray-500 space-x-10">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Work</a>
-            <a href="">Contacts</a>
+          <div class="text-gray-500 grid grid-cols-2 gap-2">
+            <a type="button" href="" class="flex items-center space-x-2">
+              <iconGitHub />
+              <span>Github</span>
+            </a>
+            <a type="button" href="" class="flex items-center space-x-2">
+              <IconLinkedIn />
+              <span>LinkedIn</span>
+            </a>
           </div>
         </div>
         <div class="flex items-center justify-center">
-          <div class="w-96 h-96 rounded-full bg-lime-200"></div>
+          <Tilt>
+            <img class="w-96 h-96 rounded-full bg-lime-200" :src="me" alt="me">
+          </Tilt>
         </div>
       </div>
 
     </div>
   </section>
 </template>
+

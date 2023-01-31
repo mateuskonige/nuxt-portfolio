@@ -33,7 +33,7 @@ import me from 'assets/images/me.svg'
             class="bg-lime-900 border border-lime-400 hover:bg-lime-800 text-gray-100 font-bold px-6 py-4"
             href="">Contact />
           </a>
-          <div class="text-gray-500 grid grid-cols-2 gap-2">
+          <div class="text-gray-500 grid grid-cols-4 gap-2">
             <a type="button" href="" class="flex items-center space-x-2 hover:text-lime-400">
               <iconGitHub />
               <span>Github</span>
@@ -48,6 +48,20 @@ import me from 'assets/images/me.svg'
           <Tilt>
             <img class="w-96 h-96 rounded-full bg-lime-200" :src="me" alt="me">
           </Tilt>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <div class="w-full h-[1px] bg-indigo-900"></div>
+  <section id="home" class="bg-gray-800 font-mono">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-2 gap-8 px-4 py-20">
+        <div>
+          <h3 class="text-gray-100 text-3xl">About me</h3>
+        </div>
+        <div>
+
         </div>
       </div>
 

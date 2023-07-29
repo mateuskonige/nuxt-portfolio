@@ -1,6 +1,5 @@
 <script setup>
 import Tilt from "vanilla-tilt-vue";
-import me from "assets/images/me.svg";
 const aboutInit = "<p>";
 const aboutEnd = "</p>";
 
@@ -22,62 +21,48 @@ console.log(colorMode.preference);
           <a href="">About</a>
           <a href="">Work</a>
           <a href="">Contacts</a>
-          <a class="bg-teal-400 text-indigo-800 font-bold p-3" href=""
-            >Brief me />
+          <a class="bg-teal-400 text-indigo-800 font-bold p-3" href="">Brief me />
           </a>
 
-          <button
-            v-if="$colorMode.preference == 'system'"
-            @click="$colorMode.preference = 'light'"
-            class="
+          <button v-if="$colorMode.preference == 'system'" @click="$colorMode.preference = 'light'" class="
               hover:bg-gray-600
               text-gray-200
               hover:text-gray-100
               rounded
               hover:shadow
               p-3
-            "
-          >
+            ">
             <iconSun />
           </button>
-          <button
-            v-if="$colorMode.preference == 'light'"
-            @click="$colorMode.preference = 'dark'"
-            class="
+          <button v-if="$colorMode.preference == 'light'" @click="$colorMode.preference = 'dark'" class="
               hover:bg-gray-400
               text-gray-800
               hover:text-gray-900
               rounded
               hover:shadow
               p-3
-            "
-          >
+            ">
             <iconMoon />
           </button>
-          <button
-            v-if="$colorMode.preference == 'dark'"
-            @click="$colorMode.preference = 'system'"
-            class="
+          <button v-if="$colorMode.preference == 'dark'" @click="$colorMode.preference = 'system'" class="
               hover:bg-gray-600
               text-gray-200
               hover:text-gray-100
               rounded
               hover:shadow
               p-3
-            "
-          >
+            ">
             <iconSystem />
           </button>
         </div>
       </div>
     </div>
   </nav>
-  <section id="home" class="bg-gray-200 dark:bg-gray-800 font-mono">
+  <section id="home" class="bg-gray-100 dark:bg-gray-800 font-mono">
     <div class="max-w-5xl mx-auto">
       <div class="grid grid-cols-2 gap-8 px-4 py-20">
         <div class="space-y-6">
-          <h2
-            class="
+          <h2 class="
               text-6xl
               font-extrabold
               text-transparent
@@ -86,17 +71,14 @@ console.log(colorMode.preference);
               dark:from-teal-300
               to-indigo-700
               dark:to-indigo-300
-            "
-          >
+            ">
             Bring your brand to life with your help
           </h2>
           <p class="text-gray-900 dark:text-gray-100 font-sans">
             In your role as a professional web developer, you're up for just
             about any website-building challenge.
           </p>
-          <a
-            type="button"
-            class="
+          <a type="button" class="
               bg-teal-900
               border border-teal-400
               hover:bg-teal-800
@@ -104,24 +86,14 @@ console.log(colorMode.preference);
               font-bold
               px-6
               py-4
-            "
-            href=""
-            >Contact />
+            " href="">Contact />
           </a>
           <div class="text-gray-500 grid grid-cols-4 gap-2">
-            <a
-              type="button"
-              href=""
-              class="flex items-center space-x-2 hover:text-teal-400"
-            >
+            <a type="button" href="" class="flex items-center space-x-2 hover:text-teal-400">
               <iconGitHub />
               <span>Github</span>
             </a>
-            <a
-              type="button"
-              href=""
-              class="flex items-center space-x-2 hover:text-teal-400"
-            >
+            <a type="button" href="" class="flex items-center space-x-2 hover:text-teal-400">
               <IconLinkedIn />
               <span>LinkedIn</span>
             </a>
@@ -129,11 +101,8 @@ console.log(colorMode.preference);
         </div>
         <div class="flex items-center justify-center">
           <Tilt>
-            <img
-              class="w-96 h-96 rounded-full bg-teal-200"
-              :src="me"
-              alt="me"
-            />
+            <img class="w-96 h-96 ring-1 ring-teal-400 bg-teal-200 hover:shadow-xl transition-all ease-in-out"
+              src="https://github.com/mateuskonige.png?size=500" alt="me" />
           </Tilt>
         </div>
       </div>
@@ -166,14 +135,12 @@ console.log(colorMode.preference);
               necessary to produce a quality user experience that leads to
               meeting business goals.
             </p>
-            <ul
-              class="
+            <ul class="
                 text-gray-800
                 dark:text-gray-100
                 font-sans
                 list-disc list-inside
-              "
-            >
+              ">
               <li>
                 Create responsive websites that work on a wide range of devices
               </li>
@@ -188,9 +155,7 @@ console.log(colorMode.preference);
               The work I provide is of highest quality, fully responsive, and
               tested in a wide range of devices.
             </p>
-            <a
-              type="button"
-              class="
+            <a type="button" class="
                 bg-teal-900
                 border border-teal-400
                 hover:bg-teal-800
@@ -198,9 +163,7 @@ console.log(colorMode.preference);
                 font-bold
                 px-4
                 py-3
-              "
-              href=""
-              >LinkedIn profile />
+              " href="">LinkedIn profile />
             </a>
           </div>
         </div>
@@ -220,24 +183,12 @@ console.log(colorMode.preference);
         </div>
       </div>
       <div class="grid grid-cols-3 gap-10 px-4 pb-20">
-        <nuxt-img
-          src="https://matriculas.estacio.br/blog/wp-content/uploads/2020/01/30estacio08-eng-software.jpg"
-          quality="80"
-          width="512"
-          height="512"
-        />
-        <nuxt-img
-          src="https://matriculas.estacio.br/blog/wp-content/uploads/2020/01/30estacio08-eng-software.jpg"
-          quality="80"
-          width="512"
-          height="512"
-        />
-        <nuxt-img
-          src="https://matriculas.estacio.br/blog/wp-content/uploads/2020/01/30estacio08-eng-software.jpg"
-          quality="80"
-          width="512"
-          height="512"
-        />
+        <nuxt-img src="https://matriculas.estacio.br/blog/wp-content/uploads/2020/01/30estacio08-eng-software.jpg"
+          quality="80" width="512" height="512" />
+        <nuxt-img src="https://matriculas.estacio.br/blog/wp-content/uploads/2020/01/30estacio08-eng-software.jpg"
+          quality="80" width="512" height="512" />
+        <nuxt-img src="https://matriculas.estacio.br/blog/wp-content/uploads/2020/01/30estacio08-eng-software.jpg"
+          quality="80" width="512" height="512" />
       </div>
     </div>
   </section>
